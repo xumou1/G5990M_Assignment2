@@ -36,23 +36,22 @@ def intro():
         """
     )
 
-    st.markdown("*GPT-3 Chatbot(Maybe you can use GPT-3 to learn more)*")
+    st.markdown("*GPT-3.5 Chatbot(Maybe you can use GPT-3.5 to learn more)*")
     test = st.text_input("Your OpenAI API Key:")
     openai.api_key = test
 
+    # Define function to get response from GPT-3.5 model
     def get_response(input):
         response = openai.Completion.create(
-            engine="davinci",
+            engine="text-davinci-002",
             prompt=input,
             temperature=0.5,
-            max_tokens=300,
+            max_tokens=100,
             n=1,
             stop=None,
             timeout=10,
         )
-
-        message = response.choices[0].text.strip()
-        return message
+        return response.choices[0].text.strip()
 
     st.markdown("***")
     st.markdown("### Question Area")
