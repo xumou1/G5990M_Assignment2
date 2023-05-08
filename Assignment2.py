@@ -135,7 +135,7 @@ def Site_suitability():
                 plt.axis('off')
                 plt.imshow(checking_data)
                 title_font = {'fontname': 'Times New Roman', 'fontsize': 15, 'color': 'black'}
-                plt.title('Example Title with Custom Font', **title_font, pad=10)
+                plt.title(option.upper() + ' DATA', **title_font, pad=10)
                 plt.colorbar()
                 st.pyplot()
                 plt.close()
@@ -144,7 +144,7 @@ def Site_suitability():
                 plt.axis('off')
                 plt.imshow(checking_data)
                 title_font = {'fontname': 'Times New Roman', 'fontsize': 15, 'color': 'black'}
-                plt.title(option.upper() + ' Data', **title_font, pad = 10)
+                plt.title(option.upper() + ' DATA', **title_font, pad = 10)
                 plt.colorbar()
                 plt.savefig(image_buffer, format='PNG', dpi=600, bbox_inches='tight')
                 plt.close()
@@ -182,9 +182,9 @@ def Site_suitability():
         >>> df = pd.DataFrame({'a': [1, 2, 3], 'b': [4, 5, 6], 'c': [7, 8, 9]})
         >>> Normalize(df)
             a    b    c
-        0   0.0  0.0  0.0
-        1  127.5  127.5  127.5
-        2  255.0  255.0  255.0
+        0   0.0  31.875  63.75
+        1  95.625  127.5  159.375
+        2  191.25  223.125  255.0
         '''
         return (Dataframe - Dataframe.min().min()) * (255 - 0) / (Dataframe.max().max() - Dataframe.min().min())
 
@@ -251,7 +251,15 @@ def DEM_processing():
         dem = pd.read_csv(uploaded_file, sep=' ', header=None)
 
     if st.checkbox("Check DEM"):
-        st.write(dem)
+        if dem is not None:
+            st.write(dem)
+            plt.axis('off')
+            plt.imshow(dem)
+            title_font = {'fontname': 'Times New Roman', 'fontsize': 15, 'color': 'black'}
+            plt.title('DEM', **title_font, pad=10)
+            plt.colorbar()
+            st.pyplot()
+
 
     def calculate_slope(dem, cell_size):
         '''
