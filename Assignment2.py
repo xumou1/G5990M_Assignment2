@@ -25,7 +25,7 @@ def intro():
         
         ### Want to learn more about Site suitablity?
         - Learn about Site suitablity through Arcgis(https://doc.arcgis.com/en/imagery/workflows/resources/site-suitability-analysis.htm)
-        - Search ABM in ChatGPT(http://chat.openai.com/chat or Chatbot under)
+        - Search Site suitablity in ChatGPT(http://chat.openai.com/chat or Chatbot under)
 
         ### Want to learn more about Streamlit?
 
