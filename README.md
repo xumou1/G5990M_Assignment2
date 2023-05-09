@@ -7,8 +7,6 @@
   &nbsp;&nbsp;&nbsp;&nbsp;<br>
 </span>*
 
-[TOC]
-
 ## <span style="font-family: Times New Roman, sans-serif;">1 Introduction</span>
 
 ### <span style="font-family: Times New Roman, sans-serif;">1.1 Project Background</span>
