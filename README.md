@@ -19,8 +19,6 @@
       - [<span style="font-family: Times New Roman, sans-serif;">2.1.2 DEM Processing Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---212-dem-processing-logic-and-code--span-)
   * [<span style="font-family: Times New Roman, sans-serif;">3 Question And Solving Method</span>](#-span-style--font-family--times-new-roman--sans-serif---3-question-and-solving-method--span-)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ## <span style="font-family: Times New Roman, sans-serif;">1 Introduction</span>
 
 ### <span style="font-family: Times New Roman, sans-serif;">1.1 Project Background</span>
