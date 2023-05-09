@@ -161,7 +161,7 @@ def Normalize(Dataframe):
   &nbsp;&nbsp;&nbsp;&nbsp;The code uses the D8 algorithm, which calculates the slope of each pixel of the DEM and returns an array of the same size as the DEM:
 Extend the DEM by 1 unit in both rows and columns, using "edge extrapolation", where the elevation of a grid point on the edge is the elevation of its neighbouring interior point; Iterate through the interior of the DEM one by one and calculate the difference in height between the eight surrounding points and the point as dx (for distance in the x-direction) and dy (for distance in the y-direction) respectively; The dx and dy are used to calculate the slope values using the Pythagorean theorem, and the resultant array is returned with the same size as the original DEM array. The D8 algorithm gets its name from the fact that it uses a 3 x 3 neighbourhood, as shown in the following figure:<br>
   
-![Figure1 D8 Algorithms Image](C:\Users\dell\Desktop\leeds\G5990M_Assignment2\image\D8.jpg)
+![Figure1 D8 Algorithms Image](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/D8.jpg)
 
 Where p is the currently calculated pixel point and 1-8 are the eight adjacent pixel points, numbered sequentially. In the D8 algorithm, each pixel point can only flow out in one of the eight adjacent directions, i.e. to the lowest adjacent pixel point. If multiple adjacent pixel points of the same height exist, one direction is chosen at random. This method is often used in slope calculations.<br>
 </span>
