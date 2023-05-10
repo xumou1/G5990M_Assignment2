@@ -7,6 +7,18 @@
   &nbsp;&nbsp;&nbsp;&nbsp;<br>
 </span>*
 
+- [<span style="font-family: Times New Roman, sans-serif;">G5990M Programming for Geographical Information Analysis: Core Skills (28787) Assignment2</span>](#-span-style--font-family--times-new-roman--sans-serif---g5990m-programming-for-geographical-information-analysis--core-skills--28787--assignment2--span-)
+  * [<span style="font-family: Times New Roman, sans-serif;">1 Introduction</span>](#-span-style--font-family--times-new-roman--sans-serif---1-introduction--span-)
+    + [<span style="font-family: Times New Roman, sans-serif;">1.1 Project Background</span>](#-span-style--font-family--times-new-roman--sans-serif---11-project-background--span-)
+    + [<span style="font-family: Times New Roman, sans-serif;">1.2 Project Requirements</span>](#-span-style--font-family--times-new-roman--sans-serif---12-project-requirements--span-)
+      - [<span style="font-family: Times New Roman, sans-serif;">1.2.1 Site Suitability Requirements</span>](#-span-style--font-family--times-new-roman--sans-serif---121-site-suitability-requirements--span-)
+      - [<span style="font-family: Times New Roman, sans-serif;">1.2.2 DEM Processing Requirements</span>](#-span-style--font-family--times-new-roman--sans-serif---122-dem-processing-requirements--span-)
+  * [<span style="font-family: Times New Roman, sans-serif;">2 Code Details</span>](#-span-style--font-family--times-new-roman--sans-serif---2-code-details--span-)
+    + [<span style="font-family: Times New Roman, sans-serif;">2.1 Function Implementation Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---21-function-implementation-logic-and-code--span-)
+      - [<span style="font-family: Times New Roman, sans-serif;">2.1.1 Site Suitability Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---211-site-suitability-logic-and-code--span-)
+      - [<span style="font-family: Times New Roman, sans-serif;">2.1.2 DEM Processing Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---212-dem-processing-logic-and-code--span-)
+  * [<span style="font-family: Times New Roman, sans-serif;">3 Question And Solving Method</span>](#-span-style--font-family--times-new-roman--sans-serif---3-question-and-solving-method--span-)
+
 ## <span style="font-family: Times New Roman, sans-serif;">1 Introduction</span>
 
 ### <span style="font-family: Times New Roman, sans-serif;">1.1 Project Background</span>
