@@ -7,18 +7,6 @@
   &nbsp;&nbsp;&nbsp;&nbsp;<br>
 </span>*
 
-- [<span style="font-family: Times New Roman, sans-serif;">G5990M Programming for Geographical Information Analysis: Core Skills (28787) Assignment2</span>](#-span-style--font-family--times-new-roman--sans-serif---g5990m-programming-for-geographical-information-analysis--core-skills--28787--assignment2--span-)
-  * [<span style="font-family: Times New Roman, sans-serif;">1 Introduction</span>](#-span-style--font-family--times-new-roman--sans-serif---1-introduction--span-)
-    + [<span style="font-family: Times New Roman, sans-serif;">1.1 Project Background</span>](#-span-style--font-family--times-new-roman--sans-serif---11-project-background--span-)
-    + [<span style="font-family: Times New Roman, sans-serif;">1.2 Project Requirements</span>](#-span-style--font-family--times-new-roman--sans-serif---12-project-requirements--span-)
-      - [<span style="font-family: Times New Roman, sans-serif;">1.2.1 Site Suitability Requirements</span>](#-span-style--font-family--times-new-roman--sans-serif---121-site-suitability-requirements--span-)
-      - [<span style="font-family: Times New Roman, sans-serif;">1.2.2 DEM Processing Requirements</span>](#-span-style--font-family--times-new-roman--sans-serif---122-dem-processing-requirements--span-)
-  * [<span style="font-family: Times New Roman, sans-serif;">2 Code Details</span>](#-span-style--font-family--times-new-roman--sans-serif---2-code-details--span-)
-    + [<span style="font-family: Times New Roman, sans-serif;">2.1 Function Implementation Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---21-function-implementation-logic-and-code--span-)
-      - [<span style="font-family: Times New Roman, sans-serif;">2.1.1 Site Suitability Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---211-site-suitability-logic-and-code--span-)
-      - [<span style="font-family: Times New Roman, sans-serif;">2.1.2 DEM Processing Logic And Code</span>](#-span-style--font-family--times-new-roman--sans-serif---212-dem-processing-logic-and-code--span-)
-  * [<span style="font-family: Times New Roman, sans-serif;">3 Question And Solving Method</span>](#-span-style--font-family--times-new-roman--sans-serif---3-question-and-solving-method--span-)
-
 ## <span style="font-family: Times New Roman, sans-serif;">1 Introduction</span>
 
 ### <span style="font-family: Times New Roman, sans-serif;">1.1 Project Background</span>
@@ -173,7 +161,7 @@ def Normalize(Dataframe):
   &nbsp;&nbsp;&nbsp;&nbsp;The code uses the D8 algorithm, which calculates the slope of each pixel of the DEM and returns an array of the same size as the DEM:
 Extend the DEM by 1 unit in both rows and columns, using "edge extrapolation", where the elevation of a grid point on the edge is the elevation of its neighbouring interior point; Iterate through the interior of the DEM one by one and calculate the difference in height between the eight surrounding points and the point as dx (for distance in the x-direction) and dy (for distance in the y-direction) respectively; The dx and dy are used to calculate the slope values using the Pythagorean theorem, and the resultant array is returned with the same size as the original DEM array. The D8 algorithm gets its name from the fact that it uses a 3 x 3 neighbourhood, as shown in the following figure:<br>
   
-![Figure1 D8 Algorithms Image](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/D8.jpg)
+![](image\D8.jpg)
 
 Where p is the currently calculated pixel point and 1-8 are the eight adjacent pixel points, numbered sequentially. In the D8 algorithm, each pixel point can only flow out in one of the eight adjacent directions, i.e. to the lowest adjacent pixel point. If multiple adjacent pixel points of the same height exist, one direction is chosen at random. This method is often used in slope calculations.<br>
 </span>
@@ -231,4 +219,114 @@ plt.plot(min_slope_position[1], min_slope_position[0], 'ro', label='Min Slope', 
 ```
 
 ## <span style="font-family: Times New Roman, sans-serif;">3 Question And Solving Method</span>
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;The main problem encountered during the completion of the overall functionality was testing. We found that when implementing the project functionality through the streamlit library, all the implemented functions could not be exposed to the external environment, and because of the testing characteristics of the doctest library (only functions exposed to the external environment can be tested), such testing was not possible.<br>
+</span>
+
+## <span style="font-family: Times New Roman, sans-serif;">4 Usage And Project Deployment</span>
+
+### <span style="font-family: Times New Roman, sans-serif;">4.1 Project deployment</span>
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;Before using the project, users need to deploy the project. Of course, the project has been laid out on Streamlit Cloud, which can be accessed through the link at the beginning of the README document, below we demonstrate the deployment of the project from both online and local directions.<br>
+</span>
+
+#### <span style="font-family: Times New Roman, sans-serif;">4.1.1 Online project deployment</span>
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;First, we go to the Streamlit cloud website and log in via our Github account to complete the link to the repository. Here is the link to the Streamlit cloud. The steps are shown below.&nbsp;&nbsp;[Streamlit Share Link](https://share.streamlit.io/)<br>
+</span>
+
+![](image\Streamlit_onlinestep1.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;The next step is to set up the project via an existing Github repository, as follows<br>
+</span>
+
+![](image\Streamlit_onlinestep2.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;The dependencies required in the project are installed via the requirements.txt file in the Github repository<br>
+</span>
+
+#### <span style="font-family: Times New Roman, sans-serif;">4.1.2 Local project deployment</span>
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;First we need to download the Github repository locally<br>
+</span>
+
+```
+git clone https://github.com/xumou1/G5990M_Assignment2.git
+```
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;Next we need to configure the environment for the project to run. I can do this by using the requirements.txt file in the github repository to configure the dependencies.This completes the environmental requirements for the project and can be called via cmd<br>
+</span>
+
+```
+pip install -r requirements.txt
+```
+
+### <span style="font-family: Times New Roman, sans-serif;">4.2 Project Usage</span>
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;The project can be opened directly online via a link or locally, here is the cmd command to open the project locally<br>
+</span>
+
+```
+cd ../G5990M_Assignment2
+streamlit run Assignment2.py
+
+# if streamlit can not use directly
+python -m streamlit run Assignment2.py
+```
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;Here we can start to use the software; first, we can see that three interfaces can be selected; the first interface is the introduction, and then this interface can get some information about the project that can also be used to complete the project Streamlit library of basic information, of course, this project introduced the now hot Gpt-3.5turbo model when the user input API key When the user enters the API key, they can use the dialogue bot on the interface to have a deeper understanding through dialogue.<br>
+</span>
+
+![Introduction](image\Streamlit_Usage1.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;First we enter the Site Suitability interface, we first need to load the data, according to the prompts on the selection box, you can use the button to select a local file to load the data<br>
+</span>
+
+![](image\Streamlit_Usage2_1.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;After loading, we can view and edit the loaded data by using the check data function, which can be used to view the data in both data table format and image format<br>
+</span>
+
+![](image\Streamlit_Usage2_2.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;We can adjust the overall weighted indicators from the sidebar, but of course in addition to the slider adjustment it is also possible to adjust the indicators by means of data entry. The results are then output via the run button<br>
+</span>
+
+![](image\Streamlit_Usage2_3.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;We can view the results in the Run Site Suit Model section and download the final results graph and the final results data (as a txt file)<br>
+</span>
+
+![](image\Streamlit_Usage2_4.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;As with the previous function, local data can be selected and DEM data can be viewed via prompts and buttons, when allowing the view to include data tables and images.<br>
+</span>
+
+![](image\Streamlit_Usage2_5.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;We can still adjust the cell size when calculating the slope via the sidebar and of course we can also check the progress of the calculation via the alert message in the sidebar<br>
+</span>
+
+![](image\Streamlit_Usage2_6.png)
+
+<span style="font-family: Times New Roman, sans-serif;">
+  &nbsp;&nbsp;&nbsp;&nbsp;Once the calculation is complete, we can see the results of the slope calculation and at the same time we can see the maximum position of the slope and the minimum position of the slope (of course in the test data there are many out of the same minimum values) and we can also look up the specific details of the slope in the format of the data table.<br>
+</span>
+
+![](image\Streamlit_Usage2_7.png)
+
 
