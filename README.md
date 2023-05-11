@@ -237,13 +237,13 @@ plt.plot(min_slope_position[1], min_slope_position[0], 'ro', label='Min Slope', 
   &nbsp;&nbsp;&nbsp;&nbsp;First, we go to the Streamlit cloud website and log in via our Github account to complete the link to the repository. Here is the link to the Streamlit cloud. The steps are shown below.&nbsp;&nbsp;[Streamlit Share Link](https://share.streamlit.io/)<br>
 </span>
 
-![](image\Streamlit_onlinestep1.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_onlinestep1.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;The next step is to set up the project via an existing Github repository, as follows<br>
 </span>
 
-![](image\Streamlit_onlinestep2.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_onlinestep2.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;The dependencies required in the project are installed via the requirements.txt file in the Github repository<br>
@@ -285,48 +285,48 @@ python -m streamlit run Assignment2.py
   &nbsp;&nbsp;&nbsp;&nbsp;Here we can start to use the software; first, we can see that three interfaces can be selected; the first interface is the introduction, and then this interface can get some information about the project that can also be used to complete the project Streamlit library of basic information, of course, this project introduced the now hot Gpt-3.5turbo model when the user input API key When the user enters the API key, they can use the dialogue bot on the interface to have a deeper understanding through dialogue.<br>
 </span>
 
-![Introduction](image\Streamlit_Usage1.png)
+![Introduction](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage1.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;First we enter the Site Suitability interface, we first need to load the data, according to the prompts on the selection box, you can use the button to select a local file to load the data<br>
 </span>
 
-![](image\Streamlit_Usage2_1.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_1.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;After loading, we can view and edit the loaded data by using the check data function, which can be used to view the data in both data table format and image format<br>
 </span>
 
-![](image\Streamlit_Usage2_2.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_2.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;We can adjust the overall weighted indicators from the sidebar, but of course in addition to the slider adjustment it is also possible to adjust the indicators by means of data entry. The results are then output via the run button<br>
 </span>
 
-![](image\Streamlit_Usage2_3.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_3.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;We can view the results in the Run Site Suit Model section and download the final results graph and the final results data (as a txt file)<br>
 </span>
 
-![](image\Streamlit_Usage2_4.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_4.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;As with the previous function, local data can be selected and DEM data can be viewed via prompts and buttons, when allowing the view to include data tables and images.<br>
 </span>
 
-![](image\Streamlit_Usage2_5.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_5.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;We can still adjust the cell size when calculating the slope via the sidebar and of course we can also check the progress of the calculation via the alert message in the sidebar<br>
 </span>
 
-![](image\Streamlit_Usage2_6.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_6.png)
 
 <span style="font-family: Times New Roman, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;Once the calculation is complete, we can see the results of the slope calculation and at the same time we can see the maximum position of the slope and the minimum position of the slope (of course in the test data there are many out of the same minimum values) and we can also look up the specific details of the slope in the format of the data table.<br>
 </span>
 
-![](image\Streamlit_Usage2_7.png)
+![](https://github.com/xumou1/G5990M_Assignment2/blob/main/image/Streamlit_Usage2_7.png)
 
 
